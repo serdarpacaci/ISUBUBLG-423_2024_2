@@ -28,6 +28,7 @@ namespace IsubuSatisIdentity
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddLocalApiAuthentication();
             services.AddControllersWithViews();
 
             services.AddDbContext<ApplicationDbContext>(options =>
@@ -55,6 +56,7 @@ namespace IsubuSatisIdentity
 
             // not recommended for production - you need to store your key material somewhere secure
             builder.AddDeveloperSigningCredential();
+            builder.AddResourceOwnerValidator<IsubuResourceOwnerPasswordValidator>();
 
             services.AddAuthentication()
                 .AddGoogle(options =>

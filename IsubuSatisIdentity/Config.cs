@@ -34,6 +34,8 @@ namespace IsubuSatisIdentity
                 new ApiScope("katalog"),
             };
 
+
+        //https://docs.duendesoftware.com/identityserver/v7/reference/endpoints/token/
         public static IEnumerable<Client> Clients =>
             new Client[]
             {
@@ -54,7 +56,7 @@ namespace IsubuSatisIdentity
                 {
                     ClientId = "IsubuSatisMvcForUser",
                     ClientSecrets = { new Secret("ISUBUUser_Secret".Sha256()) },
-
+                    
                     AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
                     //AllowedGrantTypes = GrantTypes.Implicit,
 
@@ -63,7 +65,8 @@ namespace IsubuSatisIdentity
                     //PostLogoutRedirectUris = { "https://localhost:44300/signout-callback-oidc" },
 
                     AllowOfflineAccess = true,
-                    AllowedScopes = { "openid", "profile", "scope2" }
+                    AllowedScopes = { "openid", "profile", "katalog" },
+                    AccessTokenLifetime = 60
                 },
             };
     }

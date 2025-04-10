@@ -30,7 +30,12 @@ namespace IsubuSatis.KatalogService
                 {
                     x.Authority = "https://localhost:5001";
                     x.Audience = "resource_katalog";
-                    //x.TokenValidationParameters
+                    x.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+                    {
+                        RequireExpirationTime = true,
+                        ValidateLifetime = true,
+                        ClockSkew = TimeSpan.FromSeconds(15)
+                    };
                 });
 
             var app = builder.Build();

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsubuSatis.KatalogService",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsubuSatisIdentity", "IsubuSatisIdentity\IsubuSatisIdentity.csproj", "{DB54C494-1906-484A-AAB8-A6ECE6BD1EF5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsubuSatis.FotografApi", "IsubuSatis.FotografApi\IsubuSatis.FotografApi.csproj", "{69DC4E80-52DB-4FBE-A3D0-19972B71B092}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{DB54C494-1906-484A-AAB8-A6ECE6BD1EF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB54C494-1906-484A-AAB8-A6ECE6BD1EF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB54C494-1906-484A-AAB8-A6ECE6BD1EF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69DC4E80-52DB-4FBE-A3D0-19972B71B092}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69DC4E80-52DB-4FBE-A3D0-19972B71B092}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69DC4E80-52DB-4FBE-A3D0-19972B71B092}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69DC4E80-52DB-4FBE-A3D0-19972B71B092}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
