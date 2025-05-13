@@ -13,10 +13,14 @@ namespace IsubuSatisIdentity
         public static IEnumerable<ApiResource> ApiResources =>
             new ApiResource[]
             {
-            new ApiResource("resource_katalog")
-            {
-                Scopes = { "katalog" }
-            }
+                new ApiResource("resource_katalog")
+                {
+                    Scopes = { "katalog" }
+                },
+                new ApiResource("resource_fotografDepo")
+                {
+                    Scopes = { "fotograf" }
+                }
             };
 
         public static IEnumerable<IdentityResource> IdentityResources =>
@@ -32,6 +36,7 @@ namespace IsubuSatisIdentity
                 new ApiScope("scope1"),
                 new ApiScope("scope2"),
                 new ApiScope("katalog"),
+                new ApiScope("fotograf"),
             };
 
 
@@ -48,7 +53,7 @@ namespace IsubuSatisIdentity
                     AllowedGrantTypes = GrantTypes.ClientCredentials,
                     ClientSecrets = { new Secret("ISUBU_Secret".Sha256()) },
 
-                    AllowedScopes = { "scope1", "katalog" }
+                    AllowedScopes = { "scope1", "katalog", "fotograf"}
                 },
 
                 // interactive client using code flow + pkce

@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsubuSatisIdentity", "Isubu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsubuSatis.FotografApi", "IsubuSatis.FotografApi\IsubuSatis.FotografApi.csproj", "{69DC4E80-52DB-4FBE-A3D0-19972B71B092}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsubuSatis.IndirimService", "IsubuSatis.IndirimService\IsubuSatis.IndirimService.csproj", "{F8F04E8D-575A-4A04-B825-7A5C386174B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsubuSatis.Sepet", "IsubuSatis.Sepet\IsubuSatis.Sepet.csproj", "{76186323-8F72-4A8A-BEAA-B079ACF0393B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{69DC4E80-52DB-4FBE-A3D0-19972B71B092}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69DC4E80-52DB-4FBE-A3D0-19972B71B092}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69DC4E80-52DB-4FBE-A3D0-19972B71B092}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8F04E8D-575A-4A04-B825-7A5C386174B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8F04E8D-575A-4A04-B825-7A5C386174B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8F04E8D-575A-4A04-B825-7A5C386174B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8F04E8D-575A-4A04-B825-7A5C386174B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76186323-8F72-4A8A-BEAA-B079ACF0393B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76186323-8F72-4A8A-BEAA-B079ACF0393B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76186323-8F72-4A8A-BEAA-B079ACF0393B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76186323-8F72-4A8A-BEAA-B079ACF0393B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
