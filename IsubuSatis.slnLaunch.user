@@ -3,11 +3,11 @@
     "Name": "New Profile",
     "Projects": [
       {
-        "Path": "IsubuSatis.KatalogService\\IsubuSatis.KatalogService.csproj",
+        "Path": "IsubuSatisIdentity\\IsubuSatisIdentity.csproj",
         "Action": "Start"
       },
       {
-        "Path": "IsubuSatisIdentity\\IsubuSatisIdentity.csproj",
+        "Path": "IsubuSatis.Sepet\\IsubuSatis.Sepet.csproj",
         "Action": "Start"
       }
     ]

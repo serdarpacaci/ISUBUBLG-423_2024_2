@@ -20,6 +20,10 @@ namespace IsubuSatisIdentity
                 new ApiResource("resource_fotografDepo")
                 {
                     Scopes = { "fotograf" }
+                },
+                new ApiResource("resource_sepet")
+                {
+                    Scopes = {"sepet"}
                 }
             };
 
@@ -37,6 +41,7 @@ namespace IsubuSatisIdentity
                 new ApiScope("scope2"),
                 new ApiScope("katalog"),
                 new ApiScope("fotograf"),
+                new ApiScope("sepet")
             };
 
 
@@ -53,7 +58,7 @@ namespace IsubuSatisIdentity
                     AllowedGrantTypes = GrantTypes.ClientCredentials,
                     ClientSecrets = { new Secret("ISUBU_Secret".Sha256()) },
 
-                    AllowedScopes = { "scope1", "katalog", "fotograf"}
+                    AllowedScopes = { "scope1", "katalog", "fotograf" }
                 },
 
                 // interactive client using code flow + pkce
@@ -70,8 +75,8 @@ namespace IsubuSatisIdentity
                     //PostLogoutRedirectUris = { "https://localhost:44300/signout-callback-oidc" },
 
                     AllowOfflineAccess = true,
-                    AllowedScopes = { "openid", "profile", "katalog" },
-                    AccessTokenLifetime = 60
+                    AllowedScopes = { "openid", "profile", "katalog", "sepet" },
+                    AccessTokenLifetime = 3600
                 },
             };
     }
