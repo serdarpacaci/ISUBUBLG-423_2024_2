@@ -43,32 +43,33 @@ namespace IsubuSatis.FotografApi.Controllers
         }
 
 
-        [HttpPost]
-        public async Task<IActionResult> Kaydet2(IFormFile formFile, CancellationToken token)
-        {
-            if (formFile.Length == 0 ||
-                !_izinVerilenFormatlar.Any(x => x == formFile.ContentType))
-                return BadRequest();
+        //[HttpPost]
+        //public async Task<IActionResult> Kaydet2(IFormFile formFile, CancellationToken token)
+        //{
+        //    if (formFile.Length == 0 ||
+        //        !_izinVerilenFormatlar.Any(x => x == formFile.ContentType))
+        //        return BadRequest();
 
-            var fileExtension = Path.GetExtension(formFile.FileName);
-            var fileName = Path.GetRandomFileName();
-            fileName = fileName.Substring(0, fileName.Length - 4) + fileExtension;
+        //    var fileExtension = Path.GetExtension(formFile.FileName);
+        //    var fileName = Path.GetRandomFileName();
+        //    fileName = fileName.Substring(0, fileName.Length - 4) + fileExtension;
 
-            var fotografPath = Path.Combine(_fotografKlasorPath, fileName);
+        //    var fotografPath = Path.Combine(_fotografKlasorPath, fileName);
 
-            using var stream = new FileStream(fotografPath, FileMode.Create);
-            await formFile.CopyToAsync(stream);
-            stream.Close();
+        //    using var stream = new FileStream(fotografPath, FileMode.Create);
+        //    await formFile.CopyToAsync(stream);
+        //    stream.Close();
 
-            if (token.IsCancellationRequested && System.IO.File.Exists(fotografPath))
-            {
-                System.IO.File.Delete(fotografPath);
-            }
+        //    if (token.IsCancellationRequested && System.IO.File.Exists(fotografPath))
+        //    {
+        //        System.IO.File.Delete(fotografPath);
+        //    }
 
-            return Ok(new {FileName = fileName });
+        //    return Ok(new {FileName = fileName });
 
-        }
+        //}
 
+        [HttpDelete]
         public IActionResult Sil(string fileName)
         {
             var path = Path.Combine(_fotografKlasorPath, fileName);

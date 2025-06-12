@@ -3,11 +3,23 @@
     "Name": "New Profile",
     "Projects": [
       {
+        "Path": "IsubuSatis.Siparis.Api\\IsubuSatis.Siparis.Api.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "IsubuSatis.OdemeApi\\IsubuSatis.OdemeApi.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "IsubuSatis.KatalogService\\IsubuSatis.KatalogService.csproj",
+        "Action": "Start"
+      },
+      {
         "Path": "IsubuSatisIdentity\\IsubuSatisIdentity.csproj",
         "Action": "Start"
       },
       {
-        "Path": "IsubuSatis.Sepet\\IsubuSatis.Sepet.csproj",
+        "Path": "IsubuSatis.Gateway\\IsubuSatis.Gateway.csproj",
         "Action": "Start"
       }
     ]

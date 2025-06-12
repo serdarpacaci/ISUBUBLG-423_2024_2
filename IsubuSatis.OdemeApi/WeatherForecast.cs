@@ -1,4 +1,4 @@
-namespace IsubuSatis.IndirimService
+namespace IsubuSatis.OdemeApi
 {
     public class WeatherForecast
     {

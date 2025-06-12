@@ -23,6 +23,8 @@ namespace IsubuSatis.Sepet
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
+            builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddSwaggerGen();
 
             builder.Services.AddMemoryCache();
 
@@ -47,6 +49,9 @@ namespace IsubuSatis.Sepet
             {
                 app.MapOpenApi();
             }
+
+            app.UseSwagger();
+            app.UseSwaggerUI();
 
             app.UseHttpsRedirection();
 

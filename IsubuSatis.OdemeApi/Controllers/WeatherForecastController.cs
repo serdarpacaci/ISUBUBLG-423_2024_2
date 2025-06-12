@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace IsubuSatis.IndirimService.Controllers;
+namespace IsubuSatis.OdemeApi.Controllers;
 
 [ApiController]
 [Route("[controller]")]
